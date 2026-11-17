@@ -1,0 +1,1043 @@
+/* =====================================
+   SKILL SWAP PLATFORM - CLEAN CSS
+   ===================================== */
+
+/* GLOBAL RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f5ff;
+    color: #25204d;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #6246d9;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:hover { color: #3978ed; }
+
+h2 {
+    text-align: center;
+    color: #6246d9;
+    margin: 25px 0;
+    font-size: 27px;
+}
+
+h3 {
+    color: #6246d9;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+/* BUTTONS */
+button {
+    background: linear-gradient(135deg, #7655e8, #3978e8);
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 8px 5px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(98,70,217,0.2);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(98,70,217,0.3);
+}
+
+/* COMMON FORMS */
+form {
+    background: white;
+    width: 450px;
+    max-width: 92%;
+    margin: 30px auto;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(65,50,130,0.10);
+    border: 1px solid #ece8ff;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin: 12px 0 6px;
+    color: #39345f;
+}
+
+input, textarea, select {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd8f5;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #faf9ff;
+    outline: none;
+    transition: 0.3s;
+    margin: 5px 0 12px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #7655e8;
+    box-shadow: 0 0 0 3px rgba(118,85,232,0.12);
+    background: white;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e7e2f5;
+    margin: 25px 0;
+}
+
+/* =====================================
+   HOME PAGE DESIGN
+   ===================================== */
+.navbar {
+    background: linear-gradient(110deg, #713bd5, #3978ed);
+    padding: 20px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(70,40,150,0.2);
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links, .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links a:hover { color: #ffe58a; }
+
+.nav-buttons a {
+    padding: 11px 20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.nav-register { border: 1px solid white; }
+
+.nav-login {
+    background: white;
+    color: #6038ce !important;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 75px 6%;
+    background: linear-gradient(120deg, #eadcff, #e1eaff);
+    min-height: 420px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    background: none;
+    color: #392078;
+    text-align: left;
+    font-size: 48px;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+.hero-content h2 {
+    text-align: left;
+    color: #4d2eae;
+    font-size: 29px;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #51496d;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.hero-buttons a {
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(120deg, #7438df, #3c54ed);
+    color: white;
+}
+
+.secondary-btn {
+    background: white;
+    border: 2px solid #7041dc;
+    color: #6236cc;
+}
+
+.hero-buttons a:hover { transform: translateY(-4px); }
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    background: rgba(255,255,255,0.45);
+    border-radius: 35px;
+    padding: 35px 15px;
+}
+
+.student-illustration { font-size: 110px; }
+
+.floating-icon {
+    display: inline-block;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.hero-image h3 {
+    color: #6335c9;
+    font-size: 22px;
+}
+
+.features {
+    padding: 55px 5%;
+    text-align: center;
+}
+
+.features > h2 {
+    font-size: 32px;
+    color: #6235cf;
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(85,55,160,0.10);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(85,55,160,0.18);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #6535ce;
+}
+
+.feature-card p {
+    color: #625c76;
+    line-height: 1.7;
+}
+
+.feature-card a {
+    display: inline-block;
+    background: #eee6ff;
+    color: #6035c7;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+
+.footer {
+    background: linear-gradient(110deg, #713bd5, #3978ed);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.footer h3 {
+    color: white;
+    font-size: 23px;
+}
+
+.footer p {
+    color: white;
+    margin: 8px;
+}
+
+/* =====================================
+   LOGIN PAGE DESIGN - ONE CLEAN VERSION
+   ===================================== */
+body.login-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f1e8ff, #e5edff);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #252344;
+}
+
+body.login-page .login-navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 5%;
+    background: linear-gradient(110deg, #713bd5, #3978ed);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.login-page .login-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+body.login-page .login-logo { font-size: 24px; }
+body.login-page .home-link { font-size: 17px; }
+
+body.login-page .login-container {
+    width: 100%;
+    min-height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+body.login-page .login-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 45px rgba(75,50,150,0.15);
+    text-align: center;
+}
+
+body.login-page .login-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+body.login-page .login-card h2 {
+    color: #6035cf;
+    background: none;
+    font-size: 30px;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+body.login-page .login-subtitle {
+    color: #77718c;
+    margin: 0 0 25px;
+    text-align: center;
+}
+
+body.login-page .login-card form {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+}
+
+body.login-page .login-card label {
+    display: block;
+    color: #39345f;
+    font-weight: 600;
+    margin: 15px 0 8px;
+}
+
+body.login-page .login-card input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd8f5;
+    border-radius: 12px;
+    background: #faf9ff;
+    font-size: 16px;
+    margin: 5px 0 12px;
+}
+
+body.login-page .login-card input:focus {
+    border-color: #7655e8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(118,85,232,0.12);
+}
+
+body.login-page .login-card .login-submit {
+    display: block;
+    width: 100%;
+    margin: 20px 0 5px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #7438df, #3978ed);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body.login-page .login-error {
+    background: #ffe5e5;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+body.login-page .register-text {
+    margin-top: 25px;
+    color: #51496d;
+    font-size: 14px;
+    text-align: center;
+}
+
+body.login-page .register-text a,
+body.login-page .back-home {
+    color: #6235cf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body.login-page .back-home {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 800px) {
+    .navbar {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-links, .nav-buttons {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .hero-content h2, .hero-content p {
+        text-align: center;
+    }
+
+    .hero-buttons { justify-content: center; }
+    .feature-container { grid-template-columns: 1fr; }
+    .hero-image { width: 100%; }
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 25px; }
+
+    body.login-page .login-card {
+        padding: 25px 20px;
+    }
+
+    body.login-page .login-card h2 {
+        font-size: 25px;
+    }
+
+    body.login-page .login-navbar {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    form { padding: 22px; }
+}
+
+/* MODERN DASHBOARD DESIGN */
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #f5f1ff;
+}
+
+.dashboard-header {
+    background: linear-gradient(110deg, #713bd5, #3978ed);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.dashboard-header h1 {
+    color: white;
+    font-size: 34px;
+    margin: 0;
+}
+
+.dashboard-header p {
+    color: white;
+    margin: 5px 0 0;
+}
+
+.dashboard-main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+.dashboard-welcome {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.dashboard-welcome h2 {
+    color: #6035cf;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.dashboard-welcome p {
+    text-align: center;
+    color: #625c76;
+    font-size: 17px;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(85,55,160,0.10);
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #ece8ff;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(85,55,160,0.18);
+}
+
+.dashboard-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card h3 {
+    font-size: 22px;
+}
+
+.dashboard-card p {
+    color: #625c76;
+}
+
+.dashboard-card span {
+    display: inline-block;
+    margin-top: 12px;
+    color: #6235cf;
+    font-weight: bold;
+}
+
+.dashboard-logout {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.dashboard-logout a {
+    display: inline-block;
+    background: #e94b68;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 12px;
+}
+
+.dashboard-footer {
+    text-align: center;
+    padding: 15px;
+    color: #77718c;
+}
+
+@media (max-width: 600px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header h1 {
+        font-size: 25px;
+    }
+}
+
+/* MESSAGES PAGE DESIGN */
+
+.message-container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.message-form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.chat-box {
+    background: #f5f1ff;
+    border: 1px solid #e3dcfa;
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 150px;
+    max-height: 350px;
+    overflow-y: auto;
+    margin: 15px 0;
+}
+
+.my-message {
+    background: #e2d7ff;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 10px 0 10px auto;
+    max-width: 85%;
+    text-align: right;
+}
+
+.other-message {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 10px auto 10px 0;
+    max-width: 85%;
+}
+
+.my-message p,
+.other-message p {
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+}
+
+.message-status {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+/* REGISTER PAGE DESIGN */
+
+body.register-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f1e8ff, #e5edff);
+}
+
+.register-navbar {
+    background: linear-gradient(110deg, #713bd5, #3978ed);
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-navbar a {
+    color: white;
+    font-weight: bold;
+}
+
+.register-logo {
+    font-size: 23px;
+}
+
+.register-container {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px 40px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(75,50,150,0.15);
+    text-align: center;
+}
+
+.register-icon {
+    font-size: 55px;
+}
+
+.register-card h2 {
+    color: #6035cf;
+    margin: 10px 0;
+}
+
+.register-subtitle {
+    color: #77718c;
+    margin-bottom: 20px;
+}
+
+.register-card form {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    text-align: left;
+}
+
+.register-card label {
+    display: block;
+    font-weight: 600;
+    margin: 12px 0 5px;
+}
+
+.register-card input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 11px;
+    border: 1px solid #ddd8f5;
+    background: #faf9ff;
+}
+
+.register-submit {
+    width: 100%;
+    margin: 20px 0 5px;
+    padding: 15px;
+}
+
+.register-success {
+    background: #e3f8e9;
+    color: #16833b;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.register-error {
+    background: #ffe5e5;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.register-login-text {
+    font-size: 14px;
+}
+
+.register-back {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .register-card {
+        padding: 25px 20px;
+    }
+
+    .register-logo {
+        font-size: 18px;
+    }
+}
+
+/* =================================
+   PREMIUM REGISTER PAGE DESIGN
+================================= */
+
+body.register-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e9e3ff, #e0eaff);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.register-wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    align-items: stretch;
+    padding: 35px;
+    gap: 30px;
+}
+
+/* LEFT WELCOME SECTION */
+
+.register-welcome {
+    background: linear-gradient(145deg, #6738d4, #3978ed);
+    border-radius: 28px;
+    padding: 55px 45px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(70,50,150,0.2);
+}
+
+.register-brand {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.register-illustration {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-welcome h1 {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    margin: 10px 0 15px;
+}
+
+.register-welcome > p {
+    color: #f0eaff;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.register-points {
+    margin: 30px auto;
+    line-height: 3;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.register-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #eee8ff;
+}
+
+/* RIGHT FORM SECTION */
+
+.register-form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 560px;
+    background: white;
+    padding: 40px 45px;
+    border-radius: 28px;
+    box-shadow: 0 15px 45px rgba(75,50,150,0.13);
+}
+
+.register-icon {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-card h2 {
+    color: #6035cf;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.register-description {
+    text-align: center;
+    color: #77718c;
+    margin-bottom: 25px;
+}
+
+.register-card form {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 20px 0;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.register-card label {
+    display: block;
+    font-weight: 600;
+    color: #39345f;
+    margin: 17px 0 7px;
+}
+
+.register-card input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd8f5;
+    border-radius: 12px;
+    background: #faf9ff;
+    font-size: 15px;
+}
+
+.register-card input:focus {
+    border-color: #7655e8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(118,85,232,0.12);
+}
+
+.register-card .register-submit {
+    width: 100%;
+    padding: 16px;
+    margin: 25px 0 10px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #7438df, #3978ed);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-card .register-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(98,70,217,0.25);
+}
+
+.register-login {
+    text-align: center;
+    color: #625c76;
+    margin-top: 20px;
+}
+
+.register-login a,
+.register-home {
+    color: #6235cf;
+    font-weight: bold;
+}
+
+.register-home {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-message {
+    padding: 13px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.register-message.success {
+    background: #e5f8ec;
+    color: #188344;
+}
+
+.register-message.error {
+    background: #ffe5e5;
+    color: #c62828;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 900px) {
+    .register-wrapper {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .register-welcome {
+        padding: 35px 20px;
+    }
+
+    .register-brand {
+        margin-bottom: 20px;
+    }
+
+    .register-welcome h1 {
+        font-size: 32px;
+    }
+
+    .register-card {
+        padding: 30px 22px;
+    }
+}
+.skill-card form {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+.skill-card form button {
+    display: inline-block;
+}
+
+.skill-card form {
+    display: inline-block;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+}
